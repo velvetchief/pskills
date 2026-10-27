@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pair-001",
+    "rule": "1 cut the explanation tail",
+    "channel": "x",
+    "source": "example only",
+    "before": "We moved the launch. That's why the page looks different.",
+    "after": "We moved the launch.",
+    "expect_before": "block"
+  },
+  {
+    "id": "pair-002",
+    "rule": "2 no soft check-in opener",
+    "channel": "email",
+    "source": "example only",
+    "before": "Just wanted to check in on the contract.",
+    "after": "Is the contract ready to sign?",
+    "expect_before": "block"
+  },
+  {
+    "id": "pair-003",
+    "rule": "none (sent as drafted)",
+    "channel": "email",
+    "source": "example only",
+    "before": "The draft is attached. Comments welcome.",
+    "after": "The draft is attached. Comments welcome.",
+    "expect_before": "none"
+  }
+]
