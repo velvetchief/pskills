@@ -1,0 +1,21 @@
+{
+  "checklist": "voice-checklist.md",
+  "facts": "owner-facts.md",
+  "log": "gate-log.jsonl",
+  "pack_max": 3,
+  "about_me_window_hours": 48,
+  "about_me_max_uses": 2,
+  "about_me_facts": {
+    "career-years": "\\b(?:years?|yrs?) (?:in|of) (?:product|design|engineering)\\b",
+    "former-employer": "\\bwhen i (?:was )?at (?:my )?(?:last|old|previous) (?:job|company)\\b",
+    "team-size": "\\b(?:my|our) (?:team|crew) of \\d+\\b"
+  },
+  "claims": [
+    {"name": "years in product", "pattern": "\\b(\\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\\+?\\s*years?\\s+(?:in|of)\\s+product\\b", "fact": "YEARS_PRODUCT"},
+    {"name": "team size", "pattern": "\\b(?:team|crew) of (\\d{1,3})\\b", "fact": "TEAM_SIZE"}
+  ],
+  "unknown_years_blocks": true,
+  "banned_hooks": ["^\\s*hot take\\b", "^\\s*unpopular opinion\\b"],
+  "banned_phrases": ["\\bsupercharge\\b", "\\bunlock (?:your|the) (?:full )?potential\\b"],
+  "disable": []
+}
